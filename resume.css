@@ -1,0 +1,26 @@
+body {
+    padding: 0.7em;
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+}
+
+#header{
+    background-color: steelblue;
+    border: 0.25em solid rgb(28, 97, 153);
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    
+}
+
+.employment{
+    display: inline
+    
+}
+
