@@ -14,18 +14,27 @@ body{
     margin-bottom: 50px;
     padding: 30px;
     background: linear-gradient(45deg, #4065d8, white );
-    color: firebrick;
+    color: #08194d;
     font-family: cursive;
 }
 
+h1{
+    text-shadow: 0 5px 10px black;
+}
+
+form{
+    color: #0e2f91;
+}
 input, select, textarea{
     border: none;
     padding: 12px;
     border-radius:5px;
     transition: 0.4s;
+    background-color: rgb(221, 231, 241);
 }
 
 input:hover, select:hover, textarea:hover{
     box-shadow: 0 0 10px blue;
     transition: 0.4s;
 }
+
