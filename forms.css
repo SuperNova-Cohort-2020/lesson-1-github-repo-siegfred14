@@ -3,3 +3,14 @@ body{
     background-size: cover;
 }
 
+#main{
+    width: 50%;
+    margin-left: 24%;
+    border: 3px darkslateblue double;
+    border-radius: 10px;
+    border-style: groove;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    background: linear-gradient(45deg, #4065d8, white );
+}
