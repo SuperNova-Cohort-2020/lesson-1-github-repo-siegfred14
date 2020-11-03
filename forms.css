@@ -38,3 +38,9 @@ input:hover, select:hover, textarea:hover{
     transition: 0.4s;
 }
 
+#submit{
+    display: block;
+    position: relative;
+    left: 300px;
+    margin-top: 15px;
+}
