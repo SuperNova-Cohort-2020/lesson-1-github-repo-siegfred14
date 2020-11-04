@@ -31,10 +31,14 @@ ul {
 header {
     background: rgb(98, 156, 231);
     /* TODO: define the grid area of header such that it takes up the first row and middle three columns */
+    grid-row: 1/2;
+    grid-column: 2/5;
 }
 
 nav {
     /* TODO: define the grid area of nav such that it takes up the second column of the second row  */
+    grid-row: 2;
+    grid-column: 2;
 }
 
 main {
@@ -43,6 +47,10 @@ main {
     /* TODO: define main to contain three columns that together take up equally the full width of main and have a 1em gap between grid items */
     overflow: auto;
     display: grid;
+    grid-row: 2;
+    grid-column: 3/5;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
     
 }
 
