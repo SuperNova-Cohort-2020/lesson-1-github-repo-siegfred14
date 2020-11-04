@@ -16,6 +16,10 @@ body {
     /* TODO: add a gap of 1em around all grid items */
     /* no row properties are needed */
     /* TODO: the height of the wrapper should be 100 viewport height units */
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 200px) 1fr;
+    grid-gap: 1em;
+    grid-auto-rows: 100vh;
 }
 
 ul {
@@ -38,6 +42,8 @@ main {
     /* TODO: make main a grid container as well */
     /* TODO: define main to contain three columns that together take up equally the full width of main and have a 1em gap between grid items */
     overflow: auto;
+    display: grid;
+    
 }
 
 header ul {
@@ -110,6 +116,7 @@ nav a:hover {
 
 .card:hover {
     border-color: #111;
+    transition: 0.4s;
 }
 
 .card a {
