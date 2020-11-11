@@ -1,31 +1,13 @@
-SuperNova-2020
-Full Stack Developer
-Day 3 JS Understanding DataTypes JS
-Faith Garza
-•
-Nov 10
-100 points
-Due Nov 13
-Copy paste the code from the file attached work through the code
-
-jsExercises.html
-HTML
-Class comments
-
-Your work
-Assigned
-Private comments
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>jS Exercises</title>
 </head>
 
 <body>
+    <h1>hello world</h1>
     <script>
         // javaScript ToDo's take the expression put it in a variable and console the variable return the answer to the questions in js comment format after each console.log() statement.
         //Example
@@ -33,51 +15,84 @@ Private comments
         var first_name = 'cindy';
         console.log(first_name);
 
-//1) What does the following expression return? 3 + 2;
+        //1) What does the following expression return? 3 + 2;
+        var add_numbers = 3 + 2;
+        console.log(add_numbers);
+        //Answer - the expression returns 5
+
+        //2) What does the following expression return? typeof(3);
+        var data_type = typeof (3);
+        console.log(data_type)
+        //Answer - The expression returns number
 
 
-
-  //2) What does the following expression return? typeof(3);
-
-
-
-  //3) What does the following expression return? typeof(3) === typeof(4.32);
+        //3) What does the following expression return? typeof(3) === typeof(4.32);
+        var data_type2 = typeof (3) === typeof (4.32);
+        console.log(data_type2);
+        //Answer - The expression returns true
 
 
-  //4) What does the following expression return? 5 / 0;
+        //4) What does the following expression return? 5 / 0;
+        var division = 5 / 0;
+        console.log(division);
+        //Ans - the expression returns Infinity
 
 
-  //5) What does the following expression return? 3/ 'bob';
-
-  //6) What does the following expression return? NaN === NaN;
-
-  //7) What does the following expression return? typeof(NaN);
-
-  //8) What does the following expression return? isNaN(NaN);;
+        //5) What does the following expression return? 3/ 'bob';
+        var division2 = 3 / 'bob';
+        console.log(division2);
+        //Ans - the expression returns NaN
 
 
-
-  //9) What does the following expression return?Math.pow(2, 3);
-
-  //10) What does the following expression return? hello;
-
-
-  //11) What does the following expression return? var y;y === "cool";
-
-  //12) What does the following expression return? "some" + " person";;
-
-//13) What does the following expression return?"cool".length;
-
-  //14) What does the following expression return?"phat" === "phat";
+        //6) What does the following expression return? NaN === NaN;
+        var test = NaN === NaN;
+        console.log(test);
 
 
-//15)Set the variable hobby to the string "programming".
+        //7) What does the following expression return? typeof(NaN);
+        var test2 = typeof (NaN);
+        console.log(test2);
+
+        //8) What does the following expression return? isNaN(NaN);;
+        var test3 = isNaN(NaN);
+        console.log(test3);
 
 
+        //9) What does the following expression return?Math.pow(2, 3);
+        var power = Math.pow(2, 3);
+        console.log(power);
+
+        //10) What does the following expression return? hello;
+        /* var greet = hello;
+        console.log(greet); */
+
+        //Answer - The expression returns "Uncaught ReferenceError: hello is not defined at jsExercises.html: 66"
+
+        //11) What does the following expression return? var y;y === "cool";
+        var y; y === "cool";
+        console.log(y);
+        // Answer - The expression returns undefined
 
 
+        //12) What does the following expression return? "some" + " person";;
+        var words = "some" + " person";
+        console.log(words);
+        // Answer - The expression returns some person
 
 
+        //13) What does the following expression return?"cool".length;
+        var words2 = "cool".length;
+        console.log(words2);
+        // Answer - The expression returns 4
+
+        //14) What does the following expression return?"phat" === "phat";
+        var words3 = "phat" === "phat";
+        console.log(words3);
+        // Answer - The expression returns 'true'
+
+        //15)Set the variable hobby to the string "programming".
+        var hobby = "programming";
+        console.log(hobby);
 
     </script>
 </body>
