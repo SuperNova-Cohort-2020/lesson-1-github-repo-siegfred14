@@ -55,12 +55,11 @@ sayHello(myName);
  */
 
 function isTwo(number) {
-    if (number === 2) {
+    if (number == 2) {
         return true;
     }
     else
         return false
-    number = 2;
 }
 console.log(isTwo(1));
 console.log(isTwo(2));
@@ -95,9 +94,9 @@ calculateTip(0.15, 33.42);
  * then display the dollar amount they should tip
  */
 function calculateTip2() {
-    let tipPercent = prompt("Enter The Tip Percent you'll pay");
+    let tipPercent = prompt("Enter The Percent you'll tip between 0 and 1");
     let bill = prompt("Enter Bill Total");
-    let tip = tipPercent / 100 * bill;
+    let tip = tipPercent * bill;
     alert("Your Tip is " + "$" + tip);
 }
 
@@ -118,3 +117,22 @@ calculateTip2();
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+function applyDiscount(originalPrice, discountPercent) {
+    var discountedAmount = originalPrice * discountPercent;
+    var newPrice = originalPrice - discountedAmount;
+    console.log(newPrice);
+}
+applyDiscount(100, .2);
+applyDiscount(45.99, 0.12);
+
+/* Using prompt and alert
+function applyDiscount2() {
+    let originalPrice = prompt("Enter Price of Item");
+    let discountPercent = prompt("Enter discount percentage (between 0 and 1)");
+    var discountedAmount = originalPrice * discountPercent;
+    var newPrice = originalPrice - discountedAmount;
+    alert("Your Updated price is " + newPrice);
+
+}
+applyDiscount2() */
