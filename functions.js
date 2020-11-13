@@ -8,9 +8,9 @@
  * > sayHello("SuperNova") // returns "Hello, SuperNova!"
  */
 
-let sayHello = function (name) {
-    return "Hello, " + name + "!";
-    //console.log("Hello, " + name + "!")
+function sayHello(name) {
+    //return "Hello, " + name + "!";
+    console.log("Hello, " + name + "!");
 };
 
 sayHello("SuperNova");
@@ -25,7 +25,7 @@ sayHello("SuperNova");
  */
 
 let helloMessage = sayHello("Siegfred");
-console.log(helloMessage);
+//console.log(helloMessage); returns undefined
 
 
 
@@ -54,6 +54,17 @@ sayHello(myName);
  * > isTwo(3) // returns false
  */
 
+function isTwo(number) {
+    if (number === 2) {
+        return true;
+    }
+    else
+        return false
+    number = 2;
+}
+console.log(isTwo(1));
+console.log(isTwo(2));
+console.log(isTwo(3));
 
 
 /**
@@ -68,12 +79,30 @@ sayHello(myName);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
+function calculateTip(tipPercent, bill) {
+    let tip = tipPercent * bill;
+    console.log(tip);
+}
+
+calculateTip(0.20, 20);
+calculateTip(0.25, 25.50);
+calculateTip(0.15, 33.42);
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+function calculateTip2() {
+    let tipPercent = prompt("Enter The Tip Percent you'll pay");
+    let bill = prompt("Enter Bill Total");
+    let tip = tipPercent / 100 * bill;
+    alert("Your Tip is " + "$" + tip);
+}
+
+calculateTip2();
+
 
 /**
  * TODO:
